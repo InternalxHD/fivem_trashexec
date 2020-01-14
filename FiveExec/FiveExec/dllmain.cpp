@@ -50,7 +50,7 @@ void init() {
         std::string cmd;
         std::getline(std::cin, cmd);
 
-        if (cmd.find("/exec") != -1) {
+        if (cmd.find("/exec") != 999) {
             repla(cmd, std::string("/exec "), "");
 
             std::string resourceName = random_string();
